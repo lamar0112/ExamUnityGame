@@ -1,0 +1,32 @@
+Kenney-kits i dette prosjektet — hva du bruker dem til
+======================================================
+
+Plassering: Assets/ThirdParty/Kenney/<KitNavn>
+
+PlatformerKit
+  - Hovedkit for Mario-lignende nivåer: blokker, plattformer, spikes, flagg, mynter, kister.
+  - Bruk: Level01/03 platforming, checkpoints (flagg), collectibles, hinder.
+  - Modeller: Models/ (FBX). Legg i scene eller lag prefabs under Assets/_Project/Prefabs/Environment/.
+
+NatureKit
+  - Trær, steiner, busker, terreng-dekor for "utendørs" og variasjon mellom nivåer.
+  - Bruk: pynt rundt PlatformerKit-bane, Level02 "circuit"-tema natur.
+  - Unngå å importere tusenvis av trær i ett level — prefab + dupliser med måte.
+
+CarKit + ToyCarKit
+  - CarKit: mer realistiske biler + deler — bra om du lager faktisk kjøring (WheelColliders).
+  - ToyCarKit: enkle lekebiler — bra til Mario Kart-inspirert "circuit" på fot (prop-dekor) eller enkel arcademodell.
+  - Velg ETT som hovedstil for Level02 så det ser konsistent ut.
+
+AudioKit
+  - UI-lyd (klikk), små SFX. Bruk på AudioManager (menuClick, jump kan byttes ut med mer passende fra pakken).
+
+ParticlePack
+  - Sprites/PNG til egne partikler eller referanse. Mappen "Unity samples" kan gi ferdige partikkel-prefabs.
+  - Bruk: portal, collectible pickup, enemy death (sammen med dine effekter).
+
+InputPrompts
+  - Ikoner for tastatur/spillkontroller i hjelpe-/kontrollmeny (TMP + Image).
+  - Tips: Du trenger ikke alle undermapper (PlayStation, Xbox, …). Behold f.eks. "Keyboard & Mouse" og "Generic" og slett resten i Unity hvis du vil spare plass.
+
+URP: Første import kan gi rosa materialer — bruk Edit > Rendering > Materials > Convert eller reimporter etter Kenneys anvisning.
